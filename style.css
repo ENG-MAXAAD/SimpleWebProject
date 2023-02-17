@@ -1,0 +1,369 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    /* position: absolute; */
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(images/Homebg2.jpeg);
+    background-size: cover;
+    background-position: center;
+    /* padding: 0px 70%; */
+}
+nav{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 28%;
+    padding-right: 10%;
+   
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+nav ul li a:hover{
+    color: #3dc466;
+    transition: .4sS;
+}
+.btn-nvs{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    right: 10%;
+    padding-top: 40px;
+    
+
+}
+.btn-sign-in{
+    /* border: 1px solid; */
+    padding: 10px 85px ;  
+}
+
+.btn-sign-in a{
+    font-family: 'Poppins', sans-serif;
+    color: #fff
+    
+}
+.btn-sign-in a:hover{
+    color: #121111;
+}
+.btn-sign-up{
+    padding: 10px 15px;
+    background: #3dc466;
+    border-radius: 10px;
+}
+.btn-sign-up a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #fff;     
+}
+.btn-sign-up:hover{
+    background: #096826;
+}
+.log{
+    position: absolute;
+    height: auto;
+    width: 250px;
+    left: 0;
+}
+.log img{
+    width: 100%;
+    height: auto;
+}
+
+.contant{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    color: #fff;
+
+}
+.contant h1{
+    font-size:60px;
+    margin-top: 20px;
+}
+.contant p{
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.btn{
+    padding: 20px 30px ;
+    margin: 10px 0 1.5rem;
+    /* text-align: center; */
+}
+.btn .btn-get{
+    background: #fff;
+    font-size: 12px;
+    /* font-weight: 700; */
+    color: #3dc466;
+    padding: 10px 20px;
+    border: 2px solid;
+    border-color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+.btn .btn-get:hover{
+    transition: .4s;
+    background: #a8a2a2;
+    border-color: #a8a2a2;
+}
+
+.btn .btn-about{
+    background-color: #3dc466;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 1.5rem;
+    font-size: 12px;
+    border: 2px solid;
+    border-color: #3dc466;
+    border-radius: 10px ;
+    text-align: center;
+   
+}
+
+.btn .btn-about:hover{
+    transition: .4s;
+    background:#90e6a9 ;
+    border-color: #90e6a9;
+}
+
+/* HOME SECTION */
+.home-section{
+    padding: 30px;
+    height: 100vh;
+    margin-top: 18%;
+    text-align: center;
+}
+.home-text span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #3dc466;
+    font-weight: 600;
+}
+.home-text h1{
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 0px;
+}
+.home-text p{
+    padding: 5px 0px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+    margin-top: 6%;
+   
+}
+.card{
+    background-color: #e3e3e3;
+    padding: 10px 15px;
+    width: 370px;
+    max-width: 850px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 6px 6px 5px solid;
+}
+.card .card-header p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+}
+.card .card-body {
+    font-family: monospace;
+    padding: 30px 3px;
+    color: #4f4e4e;
+    
+}
+.card .bx{
+    background-color: #3dc466; 
+    position: absolute;
+    top: -6%;
+    font-size: 20px;
+    padding: 7px 10px;
+    border-radius: 0 0.5rem 0 0.5rem; 
+}
+
+/* course-section */
+.course-section{
+    padding: 30px;
+    height: 100vh;
+    margin-top: 32%;
+    /* text-align: center; */
+}
+.course-section .course-text {
+    color: #3dc466;
+    font-size: 20px;
+    text-align: center;
+}
+.course-section .course-text h1{
+    color: #000;
+}
+
+.course-text p{
+    padding:  18px 0px;
+   font-family: sans-serif;
+    font-size: larger;
+    text-align: center;
+
+    color: #a29f9f;
+}
+
+.course-row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1.5rem;
+    /* align-items: center; */
+}
+.course-card{
+    background-color: #f3eeee;
+    padding: 0px 0px;
+    width: 350px;
+    max-width: 850px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 6px 6px 5px solid;
+    margin-top: 10%;
+}
+.course-card-img{
+    text-align: center;
+} 
+.course-card-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.course-card .card-course-body {
+    padding: 8px 0px;
+}
+.course-card .course-card-header .btn-about{
+    background-color: #3dc466;
+    border-color: #3dc466;
+    padding: 10px 18px ;
+    margin: 10px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.course-card .card-course-body .card-c-teacher-name{
+    padding: 5px 0px;
+    color: #a29f9f;  
+    font-size: 12px;
+}
+.course-card .card-course-body .curreny span {
+    color: #3dc466;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+.course-card-img:hover{
+    background-color: #dbd7d7;
+    transition: .4s ;
+    cursor: pointer;
+}
+
+.about-section{
+    padding: 30px;
+    height: 100vh;
+    margin-top:42%;
+}
+
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+.about-text h1{
+    /* margin-top: 10%; */
+    padding: 10px 0;
+}
+.about-text p{
+    color: #a29f9f;
+    font-size: 15px;
+}
+.btn-about{
+    padding: 30px 0px;
+  
+}
+.btn-about .btn-ab-create{
+    background-color: #3dc466;
+    border-radius: 10px;
+    padding: 10px ;
+    text-align: center;
+    color: #fff;
+}
+.btn-about .btn-ab-create:hover{
+    background-color: #90e6a9;
+    transition: .4s;
+}
+
+.btn-about .btn-a-contact{
+    background-color: #3dc466;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+}
+.btn-about .btn-a-contact:hover{
+    background-color: #90e6a9;
+}
+.footer{
+    margin-top: 10%;
+    height: 10vh;
+}
+.footer p{
+    color: #a29f9f;
+    font-size: 15px;
+    margin-left: 3%;
+}
+.row-footer{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-gap: 1.2rem;
+    align-items: center;
+    /* right: 0%; */
+   
+}
+.card-footer{
+    left: 0%;
+    background-color: blue;
+  
+}
+
+@media (max-width: 800px){
+     body{
+        background-color: red;
+     }
+}
+
+
+
+
+
+
